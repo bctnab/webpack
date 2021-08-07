@@ -1,3 +1,4 @@
 body{
+  transform: rotate(45deg);
   background-image: url(../../../static/image/60122839_p0.jpg);
 }

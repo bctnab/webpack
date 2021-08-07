@@ -61,12 +61,7 @@ module.exports = {
         test: /\.(js)$/,
         exclude: /node_modules/,
         include: resolve("../src"),
-        use: [{
-          loader: 'babel-loader',
-          options: {
-            cacheDirectory: true
-          }
-        }]
+        loader: 'babel-loader'
       }, {
         test: /\.css$/,
         use: [
@@ -75,7 +70,7 @@ module.exports = {
             options: {
               publicPath: '../'
             }
-          }, "css-loader"
+          }, "css-loader", "postcss-loader"
         ]
       }, {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
